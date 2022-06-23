@@ -153,11 +153,12 @@ body {
   margin-right: 10px;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
-.contacts-tel {
+.contacts-link.tel {
   width: 142px;
 }
 
@@ -319,6 +320,10 @@ body {
 }
 
 /* Наша команда */
+.section-color {
+  background-color: var(--secondary-background-color);
+}
+
 .section-team {
   margin-bottom: 50px;
   margin-top: 0;
@@ -349,6 +354,8 @@ body {
 .board-team {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-name {
@@ -432,7 +439,6 @@ body {
   width: 170px;
   height: 92px;
 
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -443,7 +449,8 @@ body {
   fill: currentColor;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
